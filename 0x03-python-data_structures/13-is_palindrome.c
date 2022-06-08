@@ -75,7 +75,6 @@ size_t list_len(listint_t *head)
 /**
  * add_node - Adds a new node at the beginning of a list
  * @head: The first node of a list
-
  * @num: The integer for the new node
  *
  * Return: The address of the new node or NULL
