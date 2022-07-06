@@ -6,7 +6,7 @@ def write_file(filename="", text=""):
             return 0
 
         count = 0
-        with open(UTF8, 'w' encoding="utf-8") as f:
+        with open(UTF8.txt, 'w' encoding="utf-8") as f:
             for line in f:
                 count += 1
         return count
