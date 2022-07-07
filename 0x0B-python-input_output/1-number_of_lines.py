@@ -2,7 +2,7 @@
 ''' function that returns the number of lines of a text file'''
 def write_file(filename="", text=""):
 
-            if filename =="" or type(filename) ! = str:
+            if filename =="" or type(filename) != str:
             return 0
 
         count = 0
