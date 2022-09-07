@@ -1,6 +1,4 @@
 #!/usr/bin/node
-// class Rectangle that defines a rectangle
-
 class Rectangle {
   constructor (w, h) {
     if (w > 0 && h > 0) {
@@ -10,26 +8,24 @@ class Rectangle {
   }
 
   print () {
-    let i, j, string;
-    for (i = 0; i < this.height; i++) {
-      string = '';
-      for (j = 0; j < this.width; j++) {
-        string += 'X';
+    for (let i = 0; i < this.height; i++) {
+      let shape = '';
+      for (let j = 0; j < this.width; j++) {
+        shape = shape + 'X';
       }
-      console.log(string);
+      console.log(shape);
     }
   }
 
   rotate () {
-    let temp;
-    temp = this.height;
-    this.height = this.width;
-    this.width = temp;
+    const temp = this.width;
+    this.width = this.height;
+    this.height = temp;
   }
 
   double () {
-    this.height *= 2;
-    this.width *= 2;
+    this.width = this.width * 2;
+    this.height = this.height * 2;
   }
 }
 
